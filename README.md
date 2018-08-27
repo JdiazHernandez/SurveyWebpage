@@ -1,2 +1,3 @@
 # SurveyWebpage
-Responsive survey form
+Responsive survey form.
+Task for the course on FreeCodeCamp.org.
