@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mainCss.css" />
+    <link rel="stylesheet" href="text/css" media="screen" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <div id="main">
+    <h1 id="title">HOW MUCH DO YOU ENJOY PROGRAMING</h1>
+    <p id="description">I want to know how much do you enjoy programing and what type of programing do you enjoy.</p>
+    </div>
+    
+    <form id="survey-form" >
+        <h3 id="groupTitle">Your personal info:</h3>
+        <div id="formRow">
+            <div class="labels">
+                <label id="name-label" for="name">* Name: </label>
+              </div>
+              <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="surname-label" for="surname">Surname: </label>
+              </div>
+              <div class="rightTab">
+                <input type="text" name="surname" id="surnname" class="input-field" placeholder="Enter your surname">
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="number-label" for="age">Age: </label>
+              </div>
+              <div class="rightTab">
+                <input type="number" name="age" id="number" class="input-field" min="1" max="125" placeholder="Age">
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="gender-label" for="gender">Gender: </label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="gender" class="dropdown">
+                    <option disabled value selected>Select an option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="attack-helicoper" >Attack Helicoper</option>
+                  </select>
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="email-label" for="email">* Email: </label>
+              </div>
+              <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required> 
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="status-label" for="status">What is your current status: </label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="status" class="dropdown">
+                    <option disabled value selected>Select an option</option>
+                    <option value="employed">Employed</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                    <option value="retired">Retired</option>
+                    <option value="other">Other</option>
+                  </select>
+              </div>
+        </div>
+        <div class="formRow">
+            <div class="labels">
+              <label for="userRating">* Would you recommend freeCodeCamp to a friend?</label>
+            </div>
+            <div class="rightTab">
+              <ul style="list-style: none;">
+                <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+              </ul>
+            </div>
+          </div>
+    </form>
+    <br>
+    <br>
+    <div id="survey-form">
+        <h3 id="groupTitle">Your preferences:</h3>
+        <div id="formRow">
+            <div class="labels">
+                <label id="question1-label" for="question1">How much do you enjoy to solve problems?</label>
+              </div>
+              <div class="rightTab">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="question1"> <span id="q1"></span>
+                  </div> 
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="question2-label" for="question1">How much do you enjoy thinking out of the box? </label>
+              </div>
+              <div class="rightTab">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="question2"> <span id="q2"></span>
+                </div> 
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="question1-label" for="question1">How much do you enjoy learning new languages? </label>
+              </div>
+              <div class="rightTab">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="question3"> <span id="q3"></span>
+                </div> 
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="question1-label" for="question1">When you find an issue, how do you solve it?  </label>
+              </div>
+              <div class="rightTab">
+                <input type="text" name="question4" id="q4" class="input-field" placeholder="Answer here">
+              </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="survey-form">
+        <h3 id="groupTitle">Your programing experince</h3>
+        <div id="formRow">
+            <div class="labels">
+                <label id="programing1-label" for="programing1">Do you know any programing language? </label>
+              </div>
+              <div class="rightTab">
+                <button class="collapsible">Yes</button>
+                <div class="content">
+                    <p>Wich ones?</p>
+                    <ul id="preferences" style="list-style: none;">
+                       <li class="checkbox"><label><input name="langs" value="1" type="checkbox" class="langsknown">JavaScript</label></li>
+                       <li class="checkbox"><label><input name="langs" value="2" type="checkbox" class="langsknown">Java</label></li>
+                       <li class="checkbox"><label><input name="langs" value="3" type="checkbox" class="langsknown">Phyton</label></li>
+                       <li class="checkbox"><label><input name="langs" value="4" type="checkbox" class="langsknown">C</label></li>
+                       <li class="checkbox"><label><input name="langs" value="5" type="checkbox" class="langsknown">Ruby</label></li>
+                       <li class="checkbox"><label><input name="langs" value="6" type="checkbox" class="langsknown">C#</label></li>
+                       <li class="checkbox"><label><input name="langs" value="7" type="checkbox" class="langsknown">PHP</label></li>
+                       <li class="checkbox"><label><input name="langs" value="8" type="checkbox" class="langsknown">SQL</label></li>
+                       <li class="checkbox"><label><input name="langs" value="9" type="checkbox" class="langsknown">Other</label></li>
+                     </ul>
+                </div>
+                
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="programing1-label" for="programing1">Will you learn any new programing language soon? </label>
+              </div>
+              <div class="rightTab">
+                <button class="collapsible">Yes</button>
+                <div class="content">
+                    <p>Wich ones?</p>
+                    <ul id="preferences" style="list-style: none;">
+                       <li class="checkbox"><label><input name="langs" value="1" type="checkbox" class="langsknown">JavaScript</label></li>
+                       <li class="checkbox"><label><input name="langs" value="2" type="checkbox" class="langsknown">Java</label></li>
+                       <li class="checkbox"><label><input name="langs" value="3" type="checkbox" class="langsknown">Phyton</label></li>
+                       <li class="checkbox"><label><input name="langs" value="4" type="checkbox" class="langsknown">C</label></li>
+                       <li class="checkbox"><label><input name="langs" value="5" type="checkbox" class="langsknown">Ruby</label></li>
+                       <li class="checkbox"><label><input name="langs" value="6" type="checkbox" class="langsknown">C#</label></li>
+                       <li class="checkbox"><label><input name="langs" value="7" type="checkbox" class="langsknown">PHP</label></li>
+                       <li class="checkbox"><label><input name="langs" value="8" type="checkbox" class="langsknown">SQL</label></li>
+                       <li class="checkbox"><label><input name="langs" value="9" type="checkbox" class="langsknown">Other</label></li>
+                     </ul>
+                
+                </div>
+                
+              </div>
+        </div>
+        <div id="formRow">
+            <div class="labels">
+                <label id="learning-label" for="learning">How do you learn new languages?  </label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="learning" class="dropdown">
+                    <option disabled value selected>Select an option</option>
+                    <option value="Boot camps">Boot camps</option>
+                    <option value="Video tutorials">Video tutorials</option>
+                    <option value="Online courses">Online courses</option>
+                    <option value="University course">University course</option>
+                    <option value="Books">Books</option>
+                    <option value="learning on the job">Learning on the job</option>
+                    <option value="other">Other</option>
+                  </select>
+              </div>
+        </div> 
+    </div>
+    <br>
+    <br>
+    <form id="survey-form">
+    <div class="formRow">
+        <div class="labels">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:both;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <br>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+</body>
+<script src="js/js.js"></script>
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</html>
